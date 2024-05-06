@@ -46,11 +46,9 @@ export class StandaloneModelViewer {
 			alpha: options.alpha ?? false,
 			antialias: options.antialias ?? false,
 		})
+
 		this.renderer.setPixelRatio(window.devicePixelRatio)
 		this.camera = new PerspectiveCamera(70, 2, 0.1, 1000)
-		this.camera.position.x = -20
-		this.camera.position.y = 20
-		this.camera.position.z = -20
 
 		this.camera.updateProjectionMatrix()
 		this.controls = new OrbitControls(this.camera, canvasElement)
