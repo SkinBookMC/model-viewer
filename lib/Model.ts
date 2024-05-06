@@ -6,7 +6,7 @@ import {
 	LineBasicMaterial,
 	LineSegments,
 	MathUtils,
-	MeshLambertMaterial,
+	MeshBasicMaterial,
 	NearestFilter,
 	Texture,
 	TextureLoader,
@@ -48,7 +48,7 @@ export class Model {
 
 		texture.magFilter = NearestFilter
 		texture.minFilter = NearestFilter
-		const modelMaterial = new MeshLambertMaterial({
+		const modelMaterial = new MeshBasicMaterial({
 			side: DoubleSide,
 			alphaTest: 0.2,
 			transparent: true,
