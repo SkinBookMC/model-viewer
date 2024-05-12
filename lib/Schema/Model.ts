@@ -1,3 +1,8 @@
+export interface IModel {
+	format_version: '1.12.0'
+	'minecraft:geometry': IGeoSchema[]
+}
+
 export interface IGeoSchema {
 	description?: IGeoDescriptionSchema
 	bones?: IBoneSchema[]
